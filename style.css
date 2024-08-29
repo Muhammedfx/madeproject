@@ -1,0 +1,41 @@
+.man{
+    color: orange;
+    font-weight: bold;
+
+
+}
+
+#myCarousel {
+    height: 100vh; /* Full viewport height */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Cover the entire container */
+    height: 100vh; /* Full viewport height */
+}
+
+  
+  /* CSS for hover effect */
+  .hover-card {
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .hover-card:hover {
+    transform: scale(0.95); /* Reduces size slightly on hover */
+  }
+
+  .hover-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .hover-card:hover .hover-text {
+    opacity: 1; /* Shows text on hover */
+  }
